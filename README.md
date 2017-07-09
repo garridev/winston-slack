@@ -13,9 +13,7 @@ Basic transport that works just like all other winston transports. Sends logged 
 
 additonal options:
 
-`domain:` sub-domain of the slack instance 
-
-`apiToken:` a Slack incoming webhook token (see. https://api.slack.com/)
+`webhookUri:` a Slack incoming webhook uri (see. https://api.slack.com/)
 
 `username:` name displayed in the chat channel. default "winston-slack"
 
@@ -26,8 +24,7 @@ additonal options:
     var something = require('winston-slack').Slack;
 
     winston.add(something, {
-        domain: "yourcompany",
-        apiToken: "j7w7tjBMdytjXzEZu9HQooni",
+        webhookUri: "https://hooks.slack.com/services/T621Y9D62/B65DNT20H/HHHHHHHHHHHHHHHHHHHHH",
         channel: "#test-channel",
         username: "ErrorBot",
         level: 'error',
